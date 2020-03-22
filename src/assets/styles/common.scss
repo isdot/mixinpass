@@ -1,0 +1,70 @@
+body {
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Dosis', 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $dark-color;
+  color: #eee;
+}
+
+.logo-text {
+  color: #eee;
+}
+
+.s-font {
+  font-family: 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', Menlo, Courier, monospace !important;
+}
+
+.container {
+  padding: 0 1rem;
+}
+
+.main {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+.card {
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 0 0.1rem 0px;
+  margin-bottom: 0.8rem;
+}
+
+.table {
+  th,
+  td {
+    border-bottom-color: rgba(0, 0, 0, 0.16);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: $bg-color;
+    color: #333;
+  }
+
+  .logo-text {
+    color: #333;
+  }
+
+  .topbar,
+  .card {
+    background: #fff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: $dark-color;
+    color: #eee;
+  }
+
+  .logo-text {
+    color: #eee;
+  }
+
+  .topbar,
+  .card {
+    background: rgba(48, 67, 175, 0.1);
+  }
+}
