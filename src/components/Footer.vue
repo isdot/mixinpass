@@ -19,7 +19,6 @@ export default {}
 .footer {
   padding: 1.2rem 0;
   position: absolute;
-  background: rgba(48, 67, 175, 0.15);
   width: 100%;
   bottom: 0;
   span {
